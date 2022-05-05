@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    --black-kely:#0D0E09;
+    --Noir:#000000;
+    --gris-claire:#C4C4C4;
+    --blanc:#FFFF;
+    --red:#B11313;
+    --bleu:#19587D;
+    --jaune-claire:#F8F184;
+    --jaune-foncé:#FFFF00;
+
+    /* les gradients */
+    --couleur1:#eddebfd3;
+    --couleur2:#19587D;
+    --couleur3:#8900098b;
+
+    --traite:#bcbbbd72;
+
+
+}
+body {
+    color: var(--blanc);
+}
+body p {
+    margin-bottom: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+header {
+    background-image:url(../Illustrations/Home/Bathome1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Noir);
+    color: var(--blanc);
+    /* padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px; */
+}
+
+h1{
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--blanc);
+}
+
+nav{
+    justify-content: space-between;
+    border: 1px solid var(--traite) ;
+    border-top: none;
+    margin-left: 102px;
+    margin-right: 102px;
+    padding: 40px 80px;
+}
+
+nav .game:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+section{
+    border: 1px solid var(--traite) ;
+    margin-left: 102px;
+    margin-right: 102px;
+    padding: 20rem 80px 50px 80px;
+    border-bottom: none;
+}
+section button{
+    background-image: linear-gradient(45deg,  #eddebf82 10% ,#890009);
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--blanc);
+    font-weight: 900;
+    border: none;
+    opacity: 40%;
+    padding: 10px 20px;
+}
+section .fleche{
+    width: 10%;
+    margin-top: 15rem;
+}
+
+section .icones{
+
+    position: fixed;
+    top: 350px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+section div p {
+    text-align: justify;
+}
+
+.carde{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* pour le slide de premiere photo  */
+.slider{
+    background-image: url(../Illustrations/Home/Batslider1.png);
+    background-size: contain;
+    height: 54vh;
+    animation-name: casque;
+    animation-duration: 20s !important;
+    animation-iteration-count: infinite;
+    
+}
+.slider .slide{
+    margin-left: 102px !important;
+    margin-right: 102px !important;
+    border: 1px solid var(--traite) ;
+    border-bottom: none;
+    border-top: none;
+    height: 100%;
+    
+}
+/* les animation de slide  */
+@keyframes casque {
+    0%{
+        background-image: url(../Illustrations/Home/Batslider2.png);
+    }
+    18%{
+        background-image: url(../Illustrations/Home/Batslider3.png);
+    }
+    29%{
+        background-image: url(../Illustrations/Home/Batslider4.png);
+    }
+    39%{
+        background-image: url(../Illustrations/Home/Batslider5.png);
+    }
+    52%{
+        background-image: url(../Illustrations/Home/Batslider6.png);
+    }
+    65%{
+        background-image: url(../Illustrations/Home/Batslider7.png);
+    }
+    75%{
+        background-image: url(../Illustrations/Home/Batslider8.png);
+    }
+    90%{
+        background-image: url(../Illustrations/Home/Batslider9.png);
+    }
+    100%{
+        background-image: url(../Illustrations/Home/Batslider10.png);
+    }
+       
+}
+
+
+
+/* le contenus mechant  */
+
+main{
+    background-color: var(--Noir);
+   
+}
+.contenue{
+    margin-left: 102px;
+    margin-right: 102px;
+    padding: 10px 80px 50px 80px;
+    border: 1px solid var(--traite) ;  
+    border-bottom: none;
+    border-top: none;
+}
+
+/* pour le slide numero deux */
+.slideTwo{
+    justify-content: space-between;
+}
+.slideTwo .cardSlide{
+    width: 60%;
+    background-image: linear-gradient(10deg,  var(--black-kely) 10% ,var(--couleur2)  );
+    border-radius: 20px;
+
+}
+
+.formulaire {
+    background-image: linear-gradient(10deg,  var(--black-kely) 10% ,var(--couleur2)  );
+}
+
+.formulaire .contenu-formulaire{
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 0;
+    padding: 50px 100px 50px 100px;
+    border-top: none !important;
+    border-bottom: none !important;
+    border: 1px solid var(--traite) ;
+}
+
+.formulaire .contenu-formulaire input {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--blanc);
+    margin: 5px 0 5px 0;
+    font-size: 12px;
+}
+
+.checkbox{
+   width: 10px;
+}
+.formulaire .contenu-formulaire select{
+    background-color: transparent;
+    color: var(--blanc);
+    width: 100%;
+    border: 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 12px;
+
+}
+.formulaire .contenu-formulaire button{
+    background-color: transparent;
+    color: var(--blanc);
+    font-size: small;
+    border: 1px solid rgba(255, 255, 255, 0.218);
+}
+
+.confirmer{
+    background-image:linear-gradient(45deg, #eddebfd3,#89000968) ;
+
+}
+.citation{
+    background-color: var(--Noir);
+}
+.citation .contenue{
+    padding: 10px 80px 0px 80px;
+}
+
+.citation p{
+    margin: 0 auto;
+}
+
+.wb{
+    font-size: 10px;
+    margin: 0!important;
+}
+
+
+footer{
+    background-color: var(--Noir);
+}
+
+footer .contenue{
+    border: none;
+    padding: 0px 23rem 10px 23rem;
+    
+
+}
