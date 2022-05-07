@@ -11,4 +11,11 @@
         padding: 0;
         margin: 0 !important;
     }
+    .section-quiz{
+        margin-left: 0;
+        margin-right: 0px;
+        padding: 20px ;
+        border: 0px !important;
+       
+    }
 }
