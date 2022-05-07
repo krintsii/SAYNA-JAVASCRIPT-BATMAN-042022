@@ -54,16 +54,26 @@ const data = [
         dans la lutte contre le crime sous le nom de Batman.
       </p>
     </div>`
+]
+
+const video1 = [
+    `<iframe width="900" height="415" src="https://www.youtube.com/embed/UMgb3hQCb08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+
+    `<iframe width="900" height="415" src="https://www.youtube.com/embed/OiqPQ7L_C00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+
+    ` <iframe width="900" height="415" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
 
 
 ]
 
 const cardSlide = document.getElementById('cardSlide')
+const VideoSlide = document.getElementById('videoSlide')
 const next = document.getElementById('Next')
 const Prev = document.getElementById('Prev')
 let i = 0
 next.addEventListener('click',()=> {
     cardSlide.innerHTML= `${data[i]}`
+    VideoSlide.innerHTML= `${video1[i]}`
     if (i < data.length-1) {
         i++
     } else{
@@ -73,6 +83,7 @@ next.addEventListener('click',()=> {
 
 Prev.addEventListener('click', ()=>{
     cardSlide.innerHTML= `${data[i]}`
+    VideoSlide.innerHTML= `${video1[i]}`
     if (i > 0) {
 
         i-- 
@@ -82,17 +93,16 @@ Prev.addEventListener('click', ()=>{
 })
 
 
-// les animation de la titre 
+// les animation de la titre et image des paragraphes et des boutton sur scroll 
 const title = document.querySelectorAll("h1")
 const para = document.querySelectorAll("p");
 const image = document.querySelectorAll('img')
 const btn = document.querySelectorAll('button')
 const select = document.querySelectorAll('select')
 const input = document.querySelectorAll('input')
+const icone = document.querySelectorAll('svg')
 
-// for (let i = 0; i < title.length; i++) {
-//     title[i].classList.add('slideTitle')
-// }
+
 
 function apparaitre(element) {
     const debut = element.getBoundingClientRect().top;
@@ -125,41 +135,11 @@ window.addEventListener('scroll', () => {
     AnimScroll(btn, 'slideTitle')
     AnimScroll(input, 'slideTitle')
     AnimScroll(select, 'slideTitle')
+    AnimScroll(icone, 'slideTitle')
 })
 
 
 
-// // les animation pour les paragraphes 
-// const para = document.querySelectorAll("p");
-
-// for (let i = 0; i < para.length; i++) {
-//     para[i].classList.add("slideTitle") 
-// };
-
-// // animation sur l'image
-// const image = document.querySelectorAll('img')
-// window.addEventListener('scroll', () => {
-//    if (window.scrollY > 130) {
-//     for (let i = 0; i < image.length; i++) {
-//         image[i].classList.add('slideimage')    
-//     }
-//    }
-// })
-// // anmation sur boutton 
-// const btn = document.querySelectorAll('button')
-// for (let i = 0; i < btn.length; i++) {
-//     btn[i].classList.add('slideTitle')    
-// }
-
-// const input = document.querySelectorAll('input')
-// for (let i = 0; i < input.length; i++) {
-//     input[i].classList.add('slideTitle')    
-// }
-
-// const select = document.querySelectorAll('select')
-// for (let i = 0; i < select.length; i++) {
-//     select[i].classList.add('slideTitle')    
-// }
 
 
 // le slide de citation 
@@ -242,3 +222,15 @@ popbox.addEventListener('click',()=> {
                       </div>`
 })
 
+
+
+// les api 
+
+
+fetch("https://batman-api.herokuapp.com")
+    .then(response => {
+        return response.json();
+    })
+    .then(data => {
+        console.log(data.question);
+    })

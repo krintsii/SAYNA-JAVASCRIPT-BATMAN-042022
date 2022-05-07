@@ -1,0 +1,82 @@
+:root{
+    --black-kely:#0D0E09;
+    --Noir:#000000;
+    --gris-claire:#C4C4C4;
+    --blanc:#FFFF;
+    --red:#B11313;
+    --bleu:#19587D;
+    --jaune-claire:#F8F184;
+    --jaune-fonce:#FFFF00;
+
+    /* les gradients */
+    --couleur1:#eddebfd3;
+    --couleur2:#19587D;
+    --couleur3:#8900098b;
+
+    --traite:#bcbbbd72;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+
+
+/* pour le tous contenue avec background image  */
+header{
+    background-image: url(../Illustrations/Game/Batgame1.png);
+    background-color: var(--Noir);
+    background-size: contain;
+}
+
+/* le barre de navigation  */
+nav a{
+    text-decoration: none;
+}
+
+
+nav .home:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ /* le section  */
+
+
+ section h1 {
+     font-weight: 900;
+     overflow: none;
+     text-shadow: 2px 1px;
+     padding-bottom: 3vh;
+     
+}
+main{
+    margin-left: 102px;
+    margin-right: 102px;
+    padding: 20px 80px 10px 80px;
+}
+main button{
+    background-image: linear-gradient(45deg,  #eddebf00 0% ,#890009);
+    border: none;
+    opacity: 70%;
+    border-radius: 20px;
+}
+
+main button:hover{
+    opacity: 100%;
+}
+main button p {
+    opacity: 100%;
+    font-weight: 900;
+    color: var(--blanc);
+    padding: 20px 30px;
+}
+
+
+
+

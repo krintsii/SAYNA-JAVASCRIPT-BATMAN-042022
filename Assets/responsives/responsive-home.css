@@ -1,0 +1,118 @@
+@media screen and (max-width:758px)  {
+    nav{
+        margin: 0;
+        padding: 10px 20px;
+    }
+    section{
+        margin: 0;
+        text-align: center !important;
+        padding: 10px 20px;
+
+    }
+    section button{
+        display: inline-block;
+        text-decoration: none !important;
+        margin-top: 20px;
+        align-items: center;
+        padding: 20px 2px;
+    }
+
+    section .icones{
+        display: none;
+    }
+
+    .btn1{
+        margin-right: 0px!important;
+    }
+
+    .btn2{
+        margin-left: 0px!important;
+    }
+
+    figure > img{
+        width: 100%;
+    }
+
+    figure figcaption{
+        /* left: 25%;
+        right: 25%; */
+        align-items: center;
+        text-align: center !important;
+        margin: 0 auto !important;
+        overflow: hidden !important;
+        width: 100%;
+        padding: 20px 30px;
+       
+        /* padding-right: 46px ;
+        padding-left: 40px;
+        margin-left: 105px; */
+        opacity: 100% !important;
+    }
+    figure figcaption img {
+        transform: translate(0px); 
+               
+    }
+
+    figcaption p {
+        width: 80%;
+
+    }
+    .paul{
+        padding: 30px 15px;
+    }
+
+    figure:hover{
+        transform: scale(1.05);
+    }
+
+    .CasRare{
+        padding-right: 20px !important;
+    }
+    .slide{
+        margin: 0;
+        border: 0px !important;
+    }
+
+    .contenue{
+        margin: 0;
+        border: 0px !important;
+        padding: 10px 20px !important;
+
+    }
+
+    .cardSlide img{
+        width: 850px
+    }
+
+    iframe{
+        width: auto ;
+        text-align: center;
+        margin: 0 auto !important;
+    }
+
+    .contenu-formulaire{
+        margin: 0 !important;
+        border: 0px !important;
+        padding: 10px 20px !important;
+
+    }
+
+    .contenu-formulaire button{
+        margin-top: 30px !important;
+    }
+
+   footer  {
+       margin: 0 auto !important;
+       text-align: center !important;
+   }
+
+   footer .contenue div{
+       padding-left: 220px;
+       padding-right: 220px;
+       margin-top: 40px;
+   }
+
+   footer .contenue div img{
+       width: 2000px !important;
+   }
+}
