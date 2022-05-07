@@ -48,13 +48,35 @@ nav .home:hover{
  /* le section  */
 
 
- section h1 {
+section h1 {
      font-weight: 900;
      overflow: none;
      text-shadow: 2px 1px;
      padding-bottom: 3vh;
      
 }
+
+.section-quiz{
+    margin-left: 102px;
+    margin-right: 102px;
+    padding: 20px 80px 10px 80px;
+    border: 1px solid var(--traite) ;
+    border-top: none;
+    border-bottom: none;
+}
+
+.choice{
+    background-color: var(--traite);
+    display: flex;
+    gap: 5px;
+    align-items: center !important;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
 main{
     margin-left: 102px;
     margin-right: 102px;
